@@ -1,0 +1,5 @@
+# Training
+keras_retinanet/bin/train.py --steps 1000 --epochs 50 --backbone resnet50 csv /data/private/DentalCeph/resize_film/annotations.csv /data/private/DentalCeph/resize_film/classes.csv /data/private/DentalCeph/resize_film/val_annotations.csv
+
+# Convert model
+keras_retinanet/bin/convert_model.py /path/to/training/model.h5 /path/to/save/inference/model.h5
